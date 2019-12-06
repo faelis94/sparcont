@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+<link rel="stylesheet" href="css/estilos2.css"/>
+    <title>Simulador de sálario</title>
+    <meta charset="utf-8">
+<link rel="sortcut icon" href="_imagens/sp.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div class="sidebar">
+      <center><img  src="_imagens/300a.png">  </center>
+      <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+          </br>
+      <div class="dropdown">
+    <button class="dropbtn">Simulações
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="calculasalario.html">Folha</a>
+      <a href="calculaferias.html">Férias</a>
+      <a href="#contact">Rescisão</a>
+      <a href="#contact">GPS</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+  <button class="dropbtn">Tabelas
+  <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+  <a href="#contact">INSS</a>
+  <a href="#contact">IRRF</a>
+  <a href="#contact">Salario Fámilia</a>
+  <a href="#contact">Esocial</a>
+  </div>
+  </div>
+  </br>
+  <hr/>
+
+
+        <a href="#services">Serviços</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contact">Contato</a>
+          <a href="index.html">Sobre</a>
+
+      </br>
+      </br>
+
+
+
+
+
+  </div>
+  <div class="content">
+</br>
+</br>
+</br>
+    <div class="div1">
+        <center><h2>Calculador Salário</h2></center>
+      <div class="div2">
+        </br>
+
+      <form method="get" action="gerador.php" >
+        <div class="row">
+
+          <label for="fname">Sálario</label>
+          <input  placeholder="Valor em R$" step="0.01" required type="number" name="sl"   />
+            </div>
+
+
+        <div class="row">
+          <label for="fname">Alimentação</label>
+            <input  placeholder="Valor em R$" step="0.01"  required type="number" name="al"   />
+        </div>
+
+        <div class="row">
+    <label for="lname">Outros Proventos</label>
+    <input  title="Hora Extra,Adicional noturo,comissões"  required placeholder="Hora Extra,Adicional noturo,comissões" step="0.01"  type="number" name="outp"   />
+      </div>
+
+      <div class="row">
+  <label for="lname">Outros Descontos</label>
+  <input  title="Outros descontos gerais" required  placeholder="Outros descontos gerais" step="0.01"  type="number" name="outds"   />
+    </div>
+    <div class="row">
+<label for="lname">Faltas</label>
+<input  title="Quantidade de dias " required  placeholder="Quantidade de dias" step="0.01"  type="number" name="falt"   />
+  </div>
+  <div class="row">
+<label for="lname">DSR Desconto</label>
+<input  title="Valor fechado DSR mês" required  placeholder="Valor fechado DSR mês" step="0.01"  type="number" name="dsrd"   />
+</div>
+
+
+</br>
+  <div class="row">
+    <label  for="vt">Vale transporte</label>
+    <input type="radio" name="vt" value="1" checked> Sim
+    <input  type="radio" name="vt" value="0"> Não
+  </div>
+
+    </br>
+
+  <h5>**Valores simulados não precisos.Calculos de DSR não devem ser lançados manualmente em Outros Descontos
+    ou outros proventos<h5>
+
+  <div class="row">
+  <input class="button button2" type="submit" value="Gerar"/>
+  </div>
+
+
+          </form>
+</div>
+    </div >
+      </div>
+
+
+
+
+  </body>
+</html>

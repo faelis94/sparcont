@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="css/estilos2.css"/>
+        <title>SparCont - Home</title>
+        <meta charset="utf-8">
+    <link rel="sortcut icon" href="_imagens/sp.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div class="sidebar">
+      <center><img  src="_imagens/300a.png">  </center>
+      <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+          </br>
+      <div class="dropdown">
+    <button class="dropbtn">Simulações
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="calculasalario.html">Folha</a>
+      <a href="calculaferias.html">Férias</a>
+      <a href="#contact">Rescisão</a>
+      <a href="#contact">GPS</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+  <button class="dropbtn">Tabelas
+  <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+  <a href="#contact">INSS</a>
+  <a href="#contact">IRRF</a>
+  <a href="#contact">Salario Fámilia</a>
+  <a href="#contact">Esocial</a>
+  </div>
+  </div>
+  </br>
+  <hr/>
+
+
+        <a href="#services">Serviços</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contact">Contato</a>
+          <a href="index.html">Sobre</a>
+
+      </br>
+      </br>
+
+
+
+
+
+  </div>
+  <div class="content">
+  </br>
+  </br>
+</br>
+<div class="div1">
+    <h1> Olá cremosa,o site ainda esta sendo desenvolvido !
+               Te amo muito viu <3 </h1>
+</br>
+  <h3> Por enquanto so esta funcionando o acesso Simulaçõs -> Folha </h3>
+  <h3> Ou a tela "Sobre" que é essa onde estamos agora</h3>
+
+
+</div>
+  </div>
+
+
+  <script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+    } else {
+    dropdownContent.style.display = "block";
+    }
+    });
+  }
+  </script>
+  </body>
+</html>
